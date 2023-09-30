@@ -44,7 +44,7 @@ First we need to log back into Cilent-1 and DC-1 from [https://github.com/codyma
 <br />
 
 <p>
-<img src="https://i.imgur.com/fEeyEyg.png"/>
+<img src="https://i.imgur.com/qt05bpY.png"/>
 </p>
 <p>
 Next open Cilent-1 VM and search for Command Prompt in the search bar.
@@ -133,7 +133,7 @@ Next go back to Cilent-1 VM and ping the A Record we created. Type ping mainfram
 <br />
 
 <p>
-<img src="https://i.imgur.com/ApjFKOy.png"/>
+<img src="https://i.imgur.com/RTy2jca.png"/>
 </p>
 <p>
 We can also lookup the IP Address by typing nslookup mainframe in the command line.
@@ -141,7 +141,7 @@ We can also lookup the IP Address by typing nslookup mainframe in the command li
 <br />
 
 <p>
-<img src="https://i.imgur.com/QJeauiI.png"/>
+<img src="https://i.imgur.com/TSOyypm.png"/>
 </p>
 <p>
 Next type ipconfig /displaydns in the command line this will display all the websites search on this VM.
@@ -149,7 +149,7 @@ Next type ipconfig /displaydns in the command line this will display all the web
 <br />
 
 <p>
-<img src="https://i.imgur.com/zWKj1ls.png"/>
+<img src="https://i.imgur.com/t88q4Ev.png"/>
 </p>
 <p>
 Then we can clear the DNS cache by typing ipconfig /flushdns in the command line.
@@ -205,7 +205,7 @@ We can type ipconfig /displaydns to see what we pinged.
 <br />
 
 <p>
-<img src="https://i.imgur.com/pmyCc67.png"/>
+<img src="https://i.imgur.com/j5bBjHx.png"/>
 </p>
 <p>
 Next type ipconfig /flushdns in the commandline to flush the DNS Resolver Cache.
@@ -213,7 +213,7 @@ Next type ipconfig /flushdns in the commandline to flush the DNS Resolver Cache.
 <br />
 
 <p>
-<img src="https://i.imgur.com/zkir8Mo.png"/>
+<img src="https://i.imgur.com/XHbHpX8.png"/>
 </p>
 <p>
 Now type ping search in the command line you wil see the ping request could not find host search. Which means its not created yet.
@@ -245,7 +245,7 @@ Now we can see that search was created.
 <br />
 
 <p>
-<img src="https://i.imgur.com/kPKEW4a.png"/>
+<img src="https://i.imgur.com/jQ3Og8B.png"/>
 </p>
 <p>
 Go back to Cilent-1 VM and type ping search in the command line. 4 packets will be send and received from www.google.com
@@ -261,7 +261,7 @@ Next type ipconfig /displaydns and we will see the ping that we just did.
 <br />
 
 <p>
-<img src="https://i.imgur.com/truJwA0.png"/>
+<img src="https://i.imgur.com/X9O2LsH.png"/>
 </p>
 <p>
 Now type ipconfig /flushdns this will flush the DNS cache again.
