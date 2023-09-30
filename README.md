@@ -4,7 +4,7 @@
 </p>
 
 <h1>Create Inspect and Delete DNS A Records and CNAME</h1>
-In this tutorial, going off On-premises Active Directory Deployed in the Cloud (Azure) [https://github.com/JacobVillagomez2077/Configuring-On-premises-Active-Directory-within-Azure-VMs] we will Create Inspect and Delete DNS A Records and CNAME in DC-1 VM . <br />
+In this tutorial, going off Active Directory Deployed in Azure [https://github.com/codymar7in/Active-Directory-Configuration-] we will Create Inspect and Delete DNS A Records and CNAME in DC-1 VM . <br />
 
 <h2>Environments and Technologies Used</h2>
 
@@ -22,7 +22,7 @@ In this tutorial, going off On-premises Active Directory Deployed in the Cloud (
 
 <h2>High-Level Steps</h2>
 
-- Log into Cilent-1 and DC-1 VM from [https://github.com/Jacobvillagomez1/Configuring-On-premises-Active-Directory-within-Azure-VMs]
+- Log into Cilent-1 and DC-1 VM from [https://github.com/codymar7in/Active-Directory-Configuration-]
 - Go to DC-1 VM/ DNS Manager/ Forward Lookup Zones / Create A Record
 - Open Cilent-1 VM ping A Record from DC-1
 - Flush DNS and Display DNS on Cilent-1
@@ -39,7 +39,7 @@ In this tutorial, going off On-premises Active Directory Deployed in the Cloud (
 <img src="https://github.com/Jacobvillagomez1/Create-Inspect-and-Delete-DNS-A-Records-and-CNAME/assets/143027686/ab091d4c-4b4b-4034-9488-9f27b0d25530"/>
 </p>
 <p>
-First we need to log back into Cilent-1 and DC-1 from [https://github.com/Jacobvillagomez1/Configuring-On-premises-Active-Directory-within-Azure-VMs] using Remote Desktop Connection. Copy the Public IP and log into the VM indivudally.
+First we need to log back into Cilent-1 and DC-1 from [https://github.com/codymar7in/Active-Directory-Configuration-] using Remote Desktop Connection. Copy the Public IP and log into the VM indivudally.
 </p>
 <br />
 
