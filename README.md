@@ -1,6 +1,6 @@
 # Create Inspect and Delete DNS A Records and CNAME
 <p align="center">
-<img src="https://i.imgur.com/UQiFFTB.png"/>
+<img src="https://i.imgur.com/bVEumhu.png"/>
 </p>
 
 <h1>Create Inspect and Delete DNS A Records and CNAME</h1>
@@ -36,7 +36,7 @@ In this tutorial, going off Active Directory Deployed in Azure [https://github.c
 <h2>Actions and Observations</h2>
 
 <p>
-<img src="https://i.imgur.com/oZ19QmT.png"/>
+<img src="https://i.imgur.com/f7chmsV.png"/>
 </p>
 <p>
 First we need to log back into Cilent-1 and DC-1 from [https://github.com/codymar7in/Active-Directory-Configuration-] using Remote Desktop Connection. Copy the Public IP and log into the VM indivudally.
@@ -44,7 +44,7 @@ First we need to log back into Cilent-1 and DC-1 from [https://github.com/codyma
 <br />
 
 <p>
-<img src="https://i.imgur.com/qt05bpY.png"/>
+<img src="https://i.imgur.com/l6W9DjB.png"/>
 </p>
 <p>
 Next open Cilent-1 VM and search for Command Prompt in the search bar.
@@ -52,7 +52,7 @@ Next open Cilent-1 VM and search for Command Prompt in the search bar.
 <br />
 
 <p>
-<img src="https://i.imgur.com/ABeQzOP.png"/>
+<img src="https://i.imgur.com/HSwCiJE.png"/>
 </p>
 <p>
 Once CMD loads you will see you are under jane_admin.
@@ -61,7 +61,7 @@ Once CMD loads you will see you are under jane_admin.
 
 
 <p>
-<img src="https://i.imgur.com/uuLAr9U.png"/>
+<img src="https://i.imgur.com/sJPOoJT.png"/>
 </p>
 <p>
 Then Open DC-1 VM and click Tools on the top right side of Server Manager. Then select DNS.
@@ -69,7 +69,7 @@ Then Open DC-1 VM and click Tools on the top right side of Server Manager. Then 
 <br />
 
 <p>
-<img src="https://i.imgur.com/Zwo2r6I.png"/>
+<img src="https://i.imgur.com/VExU9w1.png"/>
 </p>
 <p>
 Next click the DC-1 File.
@@ -77,7 +77,7 @@ Next click the DC-1 File.
 <br />
 
 <p>
-<img src="https://i.imgur.com/1oEIWvC.png"/>
+<img src="https://i.imgur.com/B1mIc74.png"/>
 </p>
 <p>
 Then click Forward Lookup Zones.
@@ -85,7 +85,7 @@ Then click Forward Lookup Zones.
 <br />
 
 <p>
-<img src="https://i.imgur.com/fsSLvRB.png"/>
+<img src="https://i.imgur.com/lsfCQdG.png"/>
 </p>
 <p>
 Next double click mydomain.com folder
@@ -93,7 +93,7 @@ Next double click mydomain.com folder
 <br />
 
 <p>
-<img src="https://i.imgur.com/GPDb2ZB.png"/>
+<img src="https://i.imgur.com/KEc5g8u.png"/>
 </p>
 <p>
 We are now going to create a New Host A Record. To do this right click anywhere on the screen and click New Host (A or AAAA)...
@@ -101,7 +101,7 @@ We are now going to create a New Host A Record. To do this right click anywhere 
 <br />
 
 <p>
-<img src="https://i.imgur.com/Pvc5CaP.png"/>
+<img src="https://i.imgur.com/iWtnv13.png"/>
 </p>
 <p>
 Now in the Name section we can type mainframe and for IP Address we can type the same IP as dc-1 IP which is 10.0.0.4. Once those are both typed in click add host.
@@ -109,7 +109,7 @@ Now in the Name section we can type mainframe and for IP Address we can type the
 <br />
 
 <p>
-<img src="https://i.imgur.com/CjThiUI.png"/>
+<img src="https://i.imgur.com/pNHtexI.png"/>
 </p>
 <p>
 Once you added the host click ok.
@@ -117,7 +117,7 @@ Once you added the host click ok.
 <br />
 
 <p>
-<img src="https://i.imgur.com/5Uy0xku.png"/>
+<img src="https://i.imgur.com/RABZFKH.png"/>
 </p>
 <p>
 Then click done to finish the process.
@@ -125,7 +125,7 @@ Then click done to finish the process.
 <br />
 
 <p>
-<img src="https://i.imgur.com/t5l0Z6e.png"/>
+<img src="https://i.imgur.com/WiZ8ALF.png"/>
 </p>
 <p>
 Next go back to Cilent-1 VM and ping the A Record we created. Type ping mainframe in the command line 4 packets will be sent and received from DC-1 to Cilent-1.
@@ -133,7 +133,7 @@ Next go back to Cilent-1 VM and ping the A Record we created. Type ping mainfram
 <br />
 
 <p>
-<img src="https://i.imgur.com/RTy2jca.png"/>
+<img src="https://i.imgur.com/RIZjmRf.png"/>
 </p>
 <p>
 We can also lookup the IP Address by typing nslookup mainframe in the command line.
@@ -141,7 +141,7 @@ We can also lookup the IP Address by typing nslookup mainframe in the command li
 <br />
 
 <p>
-<img src="https://i.imgur.com/TSOyypm.png"/>
+<img src="https://i.imgur.com/XgGQyso.png"/>
 </p>
 <p>
 Next type ipconfig /displaydns in the command line this will display all the websites search on this VM.
@@ -149,7 +149,7 @@ Next type ipconfig /displaydns in the command line this will display all the web
 <br />
 
 <p>
-<img src="https://i.imgur.com/t88q4Ev.png"/>
+<img src="https://i.imgur.com/PEdnRSE.png"/>
 </p>
 <p>
 Then we can clear the DNS cache by typing ipconfig /flushdns in the command line.
@@ -157,7 +157,7 @@ Then we can clear the DNS cache by typing ipconfig /flushdns in the command line
 <br />
 
 <p>
-<img src="https://i.imgur.com/4JuQ5Bq.png"/>
+<img src="https://i.imgur.com/TaumxAS.png"/>
 </p>
 <p>
 The command line wont let use run this command, close CMD. Then when you re open Command Prompt right click and run as administrator.
@@ -165,7 +165,7 @@ The command line wont let use run this command, close CMD. Then when you re open
 <br />
 
 <p>
-<img src="https://i.imgur.com/niha24r.png"/>
+<img src="https://i.imgur.com/a7I9ngs.png"/>
 </p>
 <p>
 Click yes to allow Windows Command Processor to run.
@@ -173,7 +173,7 @@ Click yes to allow Windows Command Processor to run.
 <br />
 
 <p>
-<img src="https://i.imgur.com/dupjadI.png"/>
+<img src="https://i.imgur.com/0gi9CMB.png"/>
 </p>
 <p>
 Go back to DC-1 VM and double click mainframe and this time change the IP Address to 8.8.8.8 and click ok on the bottom left.
@@ -181,7 +181,7 @@ Go back to DC-1 VM and double click mainframe and this time change the IP Addres
 <br />
 
 <p>
-<img src="https://i.imgur.com/uL9sEs2.png"/>
+<img src="https://i.imgur.com/ZzDosGJ.png"/>
 </p>
 <p>
 Now we can see that mainframe IP Address changed to 8.8.8.8
@@ -189,7 +189,7 @@ Now we can see that mainframe IP Address changed to 8.8.8.8
 <br />
 
 <p>
-<img src="https://i.imgur.com/EYkGZd7.png"/>
+<img src="https://i.imgur.com/G4NJcbQ.png"/>
 </p>
 <p>
 Go back to Cilent-1 VM and type ping mainframe and it will still ping the IP Address even though we changed it.
@@ -197,7 +197,7 @@ Go back to Cilent-1 VM and type ping mainframe and it will still ping the IP Add
 <br />
 
 <p>
-<img src="https://i.imgur.com/lUk24pb.png"/>
+<img src="https://i.imgur.com/yzPIK19.png"/>
 </p>
 <p>
 We can type ipconfig /displaydns to see what we pinged.
@@ -205,7 +205,7 @@ We can type ipconfig /displaydns to see what we pinged.
 <br />
 
 <p>
-<img src="https://i.imgur.com/j5bBjHx.png"/>
+<img src="https://i.imgur.com/iSqymjL.png"/>
 </p>
 <p>
 Next type ipconfig /flushdns in the commandline to flush the DNS Resolver Cache.
@@ -213,7 +213,7 @@ Next type ipconfig /flushdns in the commandline to flush the DNS Resolver Cache.
 <br />
 
 <p>
-<img src="https://i.imgur.com/XHbHpX8.png"/>
+<img src="https://i.imgur.com/FVA47cG.png"/>
 </p>
 <p>
 Now type ping search in the command line you wil see the ping request could not find host search. Which means its not created yet.
@@ -221,7 +221,7 @@ Now type ping search in the command line you wil see the ping request could not 
 <br />
 
 <p>
-<img src="https://i.imgur.com/kGgWHaL.png"/>
+<img src="https://i.imgur.com/I6I2xHO.png"/>
 </p>
 <p>
 Go back to DC-1 VM and right click anywhere, then click New Alias (CNAME).
@@ -229,7 +229,7 @@ Go back to DC-1 VM and right click anywhere, then click New Alias (CNAME).
 <br />
 
 <p>
-<img src="https://i.imgur.com/JFX1og0.png"/>
+<img src="https://i.imgur.com/gw0FwRU.png"/>
 </p>
 <p>
 Now in the Alias name section type search, and under fully qualified domain name type www.google.com then you can press ok.
@@ -237,7 +237,7 @@ Now in the Alias name section type search, and under fully qualified domain name
 <br />
 
 <p>
-<img src="https://i.imgur.com/lquFChJ.png"/>
+<img src="https://i.imgur.com/tfKnlkK.png"/>
 </p>
 <p>
 Now we can see that search was created.
@@ -245,7 +245,7 @@ Now we can see that search was created.
 <br />
 
 <p>
-<img src="https://i.imgur.com/jQ3Og8B.png"/>
+<img src="https://i.imgur.com/6FGLkie.png"/>
 </p>
 <p>
 Go back to Cilent-1 VM and type ping search in the command line. 4 packets will be send and received from www.google.com
@@ -253,7 +253,7 @@ Go back to Cilent-1 VM and type ping search in the command line. 4 packets will 
 <br />
 
 <p>
-<img src="https://i.imgur.com/myLeYZ5.png"/>
+<img src="https://i.imgur.com/Mst9tob.png"/>
 </p>
 <p>
 Next type ipconfig /displaydns and we will see the ping that we just did.
@@ -261,7 +261,7 @@ Next type ipconfig /displaydns and we will see the ping that we just did.
 <br />
 
 <p>
-<img src="https://i.imgur.com/X9O2LsH.png"/>
+<img src="https://i.imgur.com/0UAif83.png"/>
 </p>
 <p>
 Now type ipconfig /flushdns this will flush the DNS cache again.
@@ -269,7 +269,7 @@ Now type ipconfig /flushdns this will flush the DNS cache again.
 <br />
 
 <p>
-<img src="https://i.imgur.com/9Js5unp.png"/>
+<img src="https://i.imgur.com/DP2Atc0.png"/>
 </p>
 <p>
 Go back to DC-1 VM and right click DC and go to properties.
@@ -277,7 +277,7 @@ Go back to DC-1 VM and right click DC and go to properties.
 <br />
 
 <p>
-<img src="https://i.imgur.com/O9ZEeXR.png"/>
+<img src="https://i.imgur.com/dvELwWK.png"/>
 </p>
 <p>
 Click on the Root Hints tab and you will see all the Root Hints in DC-1
